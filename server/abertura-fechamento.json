@@ -1,0 +1,84 @@
+{
+  "agencias": [
+    {
+      "cdUn": "0000001",
+      "nmAg": "Agencia X01",
+      "parciais": 18,
+      "concluidas": 18,
+      "periodo": 18,
+      "percentual": 100
+    },
+    {
+      "cdUn": "0000002",
+      "nmAg": "Agencia X02",
+      "parciais": 18,
+      "concluidas": 12,
+      "periodo": 18,
+      "percentual": 66.66666666666667
+    },
+    {
+      "cdUn": "0000003",
+      "nmAg": "Agencia X03",
+      "parciais": 17,
+      "concluidas": 12,
+      "periodo": 18,
+      "percentual": 66.66666666666667
+    },
+    {
+      "cdUn": "0000004",
+      "nmAg": "Agencia X04",
+      "parciais": 18,
+      "concluidas": 7,
+      "periodo": 18,
+      "percentual": 38.888888888888886
+    },
+    {
+      "cdUn": "0000005",
+      "nmAg": "Agencia X05",
+      "parciais": 10,
+      "concluidas": 1,
+      "periodo": 18,
+      "percentual": 5.555555555555555
+    },
+    {
+      "cdUn": "0000006",
+      "nmAg": "Agencia X06",
+      "parciais": 18,
+      "concluidas": 6,
+      "periodo": 18,
+      "percentual": 33.333333333333336
+    },
+    {
+      "cdUn": "0000007",
+      "nmAg": "Agencia X07",
+      "parciais": 18,
+      "concluidas": 14,
+      "periodo": 18,
+      "percentual": 77.77777777777777
+    },
+    {
+      "cdUn": "0000008",
+      "nmAg": "Agencia X08",
+      "parciais": 18,
+      "concluidas": 16,
+      "periodo": 18,
+      "percentual": 88.88888888888889
+    },
+    {
+      "cdUn": "0000009",
+      "nmAg": "Agencia X09",
+      "parciais": 16,
+      "concluidas": 4,
+      "periodo": 18,
+      "percentual": 22.22222222222222
+    },
+    {
+      "cdUn": "0000010",
+      "nmAg": "Agencia X10",
+      "parciais": 0,
+      "concluidas": 0,
+      "periodo": 18,
+      "percentual": 0
+    }
+  ]
+}

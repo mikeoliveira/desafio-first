@@ -1,0 +1,88 @@
+{
+  "indices": [
+    {
+      "label": "Chamas",
+      "value": 1235.02,
+      "highlight": true,
+      "referencia": 100000,
+      "deParaChamas": 75,
+      "realizado": 200000
+    },
+    {
+      "label": "Quadrante Atual",
+      "value": "A",
+      "highlight": true,
+      "referencia": 100000,
+      "deParaChamas": 75,
+      "realizado": 200000
+    },
+    {
+      "label": "Débito Automático",
+      "value": 20,
+      "highlight": false,
+      "referencia": 100000,
+      "deParaChamas": 75,
+      "realizado": 200000
+    },
+    {
+      "label": "Cliente CERTO",
+      "value": 69,
+      "highlight": false,
+      "referencia": 100000,
+      "deParaChamas": 75,
+      "realizado": 200000
+    },
+    {
+      "label": "Consignado",
+      "value": 70.99,
+      "highlight": false,
+      "referencia": 100000,
+      "deParaChamas": 75,
+      "realizado": 200000
+    },
+    {
+      "label": "Kgiro",
+      "value": 0,
+      "highlight": false,
+      "referencia": 100000,
+      "deParaChamas": 75,
+      "realizado": 200000
+    },
+    {
+      "label": "Gestao Preventiva",
+      "value": 60.28,
+      "highlight": false,
+      "referencia": 100000,
+      "deParaChamas": 75,
+      "realizado": 200000
+    },
+    {
+      "label": "Cap PM",
+      "value": 0,
+      "highlight": false,
+      "referencia": 100000,
+      "deParaChamas": 75,
+      "realizado": 200000
+    },
+    {
+      "label": "Consórcio",
+      "value": 150,
+      "highlight": false,
+      "referencia": 100000,
+      "deParaChamas": 75,
+      "realizado": 200000
+    },
+    {
+      "label": "Seguros Open",
+      "value": 177.4,
+      "highlight": false,
+      "referencia": 100000,
+      "deParaChamas": 75,
+      "realizado": 200000
+    }
+  ],
+  "lastUpdated": {
+    "label": "Última Atualização",
+    "value": "02/05/2023"
+  }
+}
