@@ -1,0 +1,39 @@
+<div class="box">
+  <div class="box-header">
+    <div class="box-header__title">
+      <h1>
+        Índice CERTO <span class="icon-circle-info"></span>
+        <span class="line"></span>
+      </h1>
+    </div>
+    <div class="box-header__options">
+      <span class="icon-options"></span>
+    </div>
+  </div>
+  <div class="box-highlight__container">
+    <div
+      class="box-highlight__item"
+      *ngFor="let indiceHighlight of indicesHighlight">
+      <div class="box-highlight__title">
+        {{ indiceHighlight.label }}
+      </div>
+      <div class="box-highlight__body">
+        {{ indiceHighlight.value }}
+      </div>
+    </div>
+  </div>
+
+  <div class="box-body__container">
+    <div class="box-body__item" *ngFor="let indiceDefault of indicesDefault">
+      <div class="box-body__text">
+        {{ indiceDefault.label }}
+      </div>
+      <div class="box-body__value">
+        <span
+          class="logo"
+          [ngClass]="logoSantanderToogle(indiceDefault.value)"></span>
+        {{ indiceDefault.value | number: '1.2-2' }}
+      </div>
+    </div>
+  </div>
+</div>
