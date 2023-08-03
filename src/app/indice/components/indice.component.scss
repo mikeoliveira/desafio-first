@@ -3,19 +3,8 @@
   height: 640px;
 }
 
-h1 {
-  font-size: 25px;
+.title {
   width: 90%;
-
-  .line {
-    margin-top: 8px;
-    width: 45px;
-    height: 5px;
-    display: block;
-    float: left;
-    position: absolute;
-    background: red;
-  }
 }
 
 .box-body {

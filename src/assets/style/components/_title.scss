@@ -1,0 +1,12 @@
+.title-santander {
+  font-size: 25px;
+  .line {
+    margin-top: 8px;
+    width: 45px;
+    height: 5px;
+    display: block;
+    float: left;
+    position: absolute;
+    background: red;
+  }
+}
