@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IndiceService } from 'src/app/services/indice/indice.service';
-import { IndiceWrapper } from '../models/indiceModel';
+import { IndiceLastUpdated, IndiceWrapper } from '../models/indice.model';
 
 @Component({
   selector: 'app-indice',
@@ -11,12 +11,13 @@ export class IndiceComponent implements OnInit {
   indices: IndiceWrapper[] = [];
   indicesHighlight: IndiceWrapper[] = [];
   indicesDefault: IndiceWrapper[] = [];
-  constructor(private indiceService: IndiceService) {
-    console.log('teste');
-  }
+  indiceLastUpdated: IndiceLastUpdated = { label: '', value: '' };
+
+  constructor(private indiceService: IndiceService) {}
 
   ngOnInit(): void {
     this.getIndices();
+    this.getIndiceLastUpdated();
   }
 
   getIndices() {
@@ -24,7 +25,6 @@ export class IndiceComponent implements OnInit {
       response => {
         this.indices = response;
         this.filterHighlightAndDefault(response);
-        console.log(this.indicesHighlight, this.indicesDefault);
       },
       error => {
         console.error(
@@ -36,7 +36,22 @@ export class IndiceComponent implements OnInit {
     );
   }
 
-  filterHighlightAndDefault(indicesList: any) {
+  getIndiceLastUpdated() {
+    this.indiceService.getIndiceLastUpdated().subscribe(
+      response => {
+        this.indiceLastUpdated = response;
+      },
+      error => {
+        console.error(
+          'ERRO AO EXECUTAR O SERVIÇO: Verifique se o json-server foi iniciado [npm run server]',
+          error,
+          error.status
+        );
+      }
+    );
+  }
+
+  filterHighlightAndDefault(indicesList: IndiceWrapper[]) {
     indicesList.filter((indice: IndiceWrapper) => {
       if (indice.highlight === true) {
         this.indicesHighlight.push(indice);
@@ -44,6 +59,10 @@ export class IndiceComponent implements OnInit {
         this.indicesDefault.push(indice);
       }
     });
+  }
+
+  typeofValue(value: string | number) {
+    return typeof value == 'string' ? 'box-highlight__font_green' : '';
   }
 
   logoSantanderToogle(value: string | number) {

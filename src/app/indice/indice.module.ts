@@ -6,5 +6,6 @@ import { IndiceRoutingModule } from './indice-routing.module';
 @NgModule({
   declarations: [IndiceComponent],
   imports: [CommonModule, IndiceRoutingModule],
+  exports: [],
 })
 export class IndiceModule {}
