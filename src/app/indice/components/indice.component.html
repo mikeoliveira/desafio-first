@@ -36,24 +36,24 @@
           <span
             class="logo"
             [ngClass]="logoSantanderToogle(indiceDefault.value)"></span>
-          {{ indiceDefault.value | number: '1.2-2' | dotToComma }}
+          {{ indiceDefault.value | dotToComma }}
           <div class="box-body__tooltip">
             <div class="box-body__tooltip__item">
               <div class="box-body__tooltip__label">Referência</div>
               <div class="box-body__tooltip__value">
-                {{ indiceDefault.referencia | number: '1.2-2' | dotToComma }}
+                {{ indiceDefault.referencia | dotToComma }}
               </div>
             </div>
             <div class="box-body__tooltip__item">
               <div class="box-body__tooltip__label">DePara Chamas</div>
               <div class="box-body__tooltip__value">
-                {{ indiceDefault.deParaChamas | number: '1.2-2' | dotToComma }}
+                {{ indiceDefault.deParaChamas | dotToComma }}
               </div>
             </div>
             <div class="box-body__tooltip__item">
               <div class="box-body__tooltip__label">Realizado</div>
               <div class="box-body__tooltip__value">
-                {{ indiceDefault.realizado | number: '1.2-2' | dotToComma }}
+                {{ indiceDefault.realizado | dotToComma }}
               </div>
             </div>
           </div>
