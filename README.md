@@ -1,27 +1,24 @@
-# DesafioFirst
+# Desafio First
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 16.1.6.
 
-## Development server
+## Ambiente de Desenvolvimento
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Rode `npm start` para rodar o server de desenvolvimento (dev). NAvegue para `http://localhost:4200/`. A Aplicação será carregada automaticamente após qualquer alteração de arquivos, mas recomento RESTARTAR o servidor caso você (desenvolvedor) venha a instalhar alguma biblioteca ou mexer nos arquivos `*.module.ts`.
 
-## Code scaffolding
+Rode `npm run server` para rodar o json-server. Esta aplicação irá fornecer uma API mockada com os valores a serem consumidos pela aplicação
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Bom saber que
 
-## Build
+Esta aplicação se encontra com `ESLint`, `CommitLint`, `prettier`, `lint-staged` e `Husky`.
+Antes de commitar se atente a escrita do seu código e da mensagem do seu commit para que não seja barrada em uma dessas validações.
+Qualquer dúvida seguem links abaixo:
+[ESLint - Rules](https://eslint.org/docs/latest/rules/)
+[Commitlint - config conventional](https://github.com/conventional-changelog/commitlint/blob/master/%40commitlint/config-conventional/README.md)
+[Prettier - Docs](https://prettier.io/docs/en/index.html)
+[lint-staged](https://github.com/okonet/lint-staged)
+[Husky](https://typicode.github.io/husky/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Debitos Técnicos - Parte 1
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Revisar o funcionamento do Tooltip quando a tela esta em modo resposivo ou a janela é diminuida
