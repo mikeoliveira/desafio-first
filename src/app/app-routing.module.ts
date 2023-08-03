@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ManagerCheckInOutComponent } from './manager-check-in-out/manager-check-in-out.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
     path: '',
     pathMatch: 'full',
     redirectTo: '/indice',
+  },
+  {
+    path: 'check-in-check-out',
+    component: ManagerCheckInOutComponent,
   },
 ];
 

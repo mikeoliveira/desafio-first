@@ -8,7 +8,7 @@ Rode `npm start` para rodar o server de desenvolvimento (dev). NAvegue para `htt
 
 Rode `npm run server` para rodar o json-server. Esta aplicação irá fornecer uma API mockada com os valores a serem consumidos pela aplicação
 
-## Bom saber que
+## Bom saber que:
 
 Esta aplicação se encontra com `ESLint`, `CommitLint`, `prettier`, `lint-staged` e `Husky`.
 Antes de commitar se atente a escrita do seu código e da mensagem do seu commit para que não seja barrada em uma dessas validações.
@@ -19,8 +19,18 @@ Qualquer dúvida seguem links abaixo:
 [lint-staged](https://github.com/okonet/lint-staged)
 [Husky](https://typicode.github.io/husky/)
 
+## Desafio - Parte 1 - Pontos fortes
+
+Utilizado Lazyload na Rota
+SCSS - Pattern BEM - Bloco Elemento e Modificador
+PIPE
+
 ## Debitos Técnicos - Parte 1
 
 Revisar o funcionamento do Tooltip quando a tela esta em modo resposivo ou a janela é diminuida
 
 Revisar Pipe de dotToComma - funcionamento para números na casa de milhar
+
+## Debitos Técnicos - Parte 2
+
+Utilizado Rota por componente
