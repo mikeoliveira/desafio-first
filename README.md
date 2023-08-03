@@ -22,3 +22,5 @@ Qualquer dúvida seguem links abaixo:
 ## Debitos Técnicos - Parte 1
 
 Revisar o funcionamento do Tooltip quando a tela esta em modo resposivo ou a janela é diminuida
+
+Revisar Pipe de dotToComma - funcionamento para números na casa de milhar
