@@ -66,6 +66,6 @@ export class IndiceComponent implements OnInit {
   }
 
   logoSantanderToogle(value: string | number) {
-    return value ? 'logo-santander' : 'logo-santander-negativo';
+    return value ? 'icon-santander' : 'icon-santander-negativo';
   }
 }

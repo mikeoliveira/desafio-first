@@ -1,0 +1,39 @@
+.icon {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: -30px;
+}
+.icon-santander {
+  background: url('../../../assets/santander-logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon-santander-negativo {
+  background: url('../../../assets/santander-logo-negativo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon-circle-info {
+  background-image: url('../../../assets/icon-circle-info.png');
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.icon-options {
+  background-image: url('../../../assets/three-dots.svg');
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transform: rotate(90deg);
+  position: absolute;
+  right: 0;
+}
