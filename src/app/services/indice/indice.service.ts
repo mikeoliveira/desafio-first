@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { IndiceWrapper } from 'src/app/indice/models/indiceModel';
+import { IndiceWrapper } from 'src/app/indice/models/indice.model';
 
 @Injectable({
   providedIn: 'root',
