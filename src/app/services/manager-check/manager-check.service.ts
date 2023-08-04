@@ -47,13 +47,16 @@ export class ManagerCheckService {
       } else if (typeResquest === 'atividadesMensais') {
         responseGeral.parciaisGeral += element.atividades;
       }
+      element.periodoConcluidas =
+        (element.percentualConcluidas * element.periodo) / 100;
+      element.periodoParcial =
+        (element.percentualParcial * element.periodo) / 100;
       if (responseGeral.resultado.length - 1 == index) {
         responseGeral.percentualGeral =
           (responseGeral.concluidasGeral * 100) / responseGeral.parciaisGeral;
       }
     });
 
-    console.log('heihei', responseGeral);
     return responseGeral;
   }
 }

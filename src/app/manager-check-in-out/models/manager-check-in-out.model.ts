@@ -9,6 +9,8 @@ export interface managerCheck {
   nmAgLabel: string;
   percentualConcluidas: number;
   percentualParcial: number;
+  periodoParcial: number;
+  periodoConcluidas: number;
 }
 
 export interface managerCheckGeral {

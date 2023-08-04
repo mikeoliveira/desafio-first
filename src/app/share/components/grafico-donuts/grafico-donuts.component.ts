@@ -17,9 +17,8 @@ export class GraficoDonutsComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {}
 
-  ngOnChanges() {
-    console.log('donuts component', this.dadosGrafico);
-  }
+  ngOnChanges() {}
+
   calculaPorcentagemGrafico(value: number) {
     let porcentagemGrafico = 0;
     porcentagemGrafico = 600 - (value * 600) / 100;
