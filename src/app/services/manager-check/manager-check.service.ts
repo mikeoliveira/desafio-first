@@ -57,6 +57,7 @@ export class ManagerCheckService {
       }
     });
 
+    console.log('heihei', responseGeral);
     return responseGeral;
   }
 }

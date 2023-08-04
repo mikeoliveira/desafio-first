@@ -22,11 +22,11 @@ svg {
   left: 0;
   fill: transparent;
   stroke-width: 12px;
-  stroke: #ddd;
+  stroke: $color-gray-0;
 }
 
 .graph svg.cor {
-  stroke: #5bb9cb;
+  stroke: $color-blue-0;
   stroke-dasharray: 600;
   transform: rotate(-90deg);
   transform-origin: center;

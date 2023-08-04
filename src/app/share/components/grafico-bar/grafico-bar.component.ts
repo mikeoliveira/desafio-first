@@ -13,4 +13,10 @@ export class GraficoBarComponent {
     percentualGeral: 0,
     resultado: [],
   };
+
+  calculaPorcentagemGrafico(value: any) {
+    let porcentagemGrafico = 0;
+    porcentagemGrafico = 600 - (value * 600) / 100;
+    return porcentagemGrafico;
+  }
 }

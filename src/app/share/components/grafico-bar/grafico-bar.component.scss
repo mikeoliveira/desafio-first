@@ -1,0 +1,55 @@
+@import '../../../../assets/style/settings/colors';
+
+.grafico-bar {
+  height: 250px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    background-color: $color-gray-0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 9px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    background-color: $color-gray-1;
+  }
+  .chart {
+    width: 95%;
+  }
+
+  .bar-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .bar {
+    height: 15px;
+    margin-right: 0px;
+    transition: width 0.3s ease-in-out;
+  }
+  .bar-label {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .bar-item1 {
+    width: 30%;
+    background-color: $color-blue-0;
+    border-radius: 5px;
+  }
+  .bar-item2 {
+    width: 60%;
+    background-color: $color-blue-1;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .bar-item3 {
+    width: 40%;
+    background-color: #5bc0de;
+    border-radius: 0px 5px 5px 0px;
+  }
+}

@@ -1,5 +1,11 @@
 <h2>{{ tituloGrafico }}</h2>
-<app-grafico-donuts
-  [dadosGrafico]="dadosGrafico"
-  [tituloDonuts]="tituloDonuts"></app-grafico-donuts>
-<app-grafico-bar [dadosGrafico]="dadosGrafico"></app-grafico-bar>
+<div class="grafico-donuts-bar">
+  <div class="grafico-donuts_wrapper">
+    <app-grafico-donuts
+      [dadosGrafico]="dadosGrafico"
+      [tituloDonuts]="tituloDonuts"></app-grafico-donuts>
+  </div>
+  <div class="grafico-bar_wrapper">
+    <app-grafico-bar [dadosGrafico]="dadosGrafico"></app-grafico-bar>
+  </div>
+</div>

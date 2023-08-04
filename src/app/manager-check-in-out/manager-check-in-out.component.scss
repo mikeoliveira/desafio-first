@@ -1,5 +1,13 @@
 .box-content {
-  display: block;
   width: 100%;
   height: auto;
+}
+.box-body {
+  &__container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  &__item {
+    display: initial;
+  }
 }
