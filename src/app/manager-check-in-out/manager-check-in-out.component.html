@@ -1,1 +1,28 @@
-<p>manager-check-in-out works!</p>
+<div class="box-wrapper">
+  <div class="box-content">
+    <div class="box-header">
+      <div class="box-header__title">
+        <h1 class="title-santander">
+          Gestão de Check-In/Check-Out <span class="icon-circle-info"></span>
+          <span class="line"></span>
+        </h1>
+        <div class="filter-calendar">Período</div>
+      </div>
+    </div>
+    <div class="box-body__container">
+      <div class="box-body__item">
+        <app-graficos-donuts-bar
+          [dadosGrafico]="aberturaFechamentoLojas"
+          [tituloGrafico]="'Abertura e Fechamento das Lojas'"
+          [tituloDonuts]="'Marcações Concluídas'"></app-graficos-donuts-bar>
+      </div>
+      <div class="box-body__item">
+        <app-graficos-donuts-bar
+          [dadosGrafico]="atividadesMensais"
+          [tituloGrafico]="'Atividades Mensais'"
+          [tituloDonuts]="'Agências Concluídas'"></app-graficos-donuts-bar>
+      </div>
+    </div>
+  </div>
+  <div class="box-footer"></div>
+</div>

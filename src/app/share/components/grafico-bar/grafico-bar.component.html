@@ -1,0 +1,8 @@
+<p>grafico-bar works!</p>
+<div *ngFor="let item of dadosGrafico.resultado">
+  <p>{{ item.nmAgLabel }}</p>
+  <p>{{ item.percentual | dotToComma: 2 }}%</p>
+</div>
+<!-- <code>
+  {{ dadosGrafico | json }}
+</code> -->

@@ -8,6 +8,11 @@
 }
 
 .box-body {
+  &__container {
+    padding-right: 10px;
+
+    height: 70%;
+  }
   &__value {
     &:hover .tooltip {
       display: flex !important;

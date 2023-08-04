@@ -4,9 +4,9 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'dotToComma',
 })
 export class DotToCommaPipe implements PipeTransform {
-  transform(value: number | string) {
+  transform(value: number | string, param = 2) {
     const valueNumber: string | number = parseFloat(value.toString()).toFixed(
-      2
+      param
     );
     return valueNumber.toString().replace('.', ',');
   }
