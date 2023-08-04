@@ -1,7 +1,29 @@
 <p>Grafico Donuts</p>
-<p>{{ dadosGrafico.percentualGeral | dotToComma: 1 }}%</p>
-<p>{{ dadosGrafico.parciaisGeral }} / {{ dadosGrafico.concluidasGeral }}</p>
-<p>{{ tituloDonuts }}</p>
+
 <!-- <code>
   {{ dadosGrafico | json }}
 </code> -->
+
+<div class="graph">
+  <svg>
+    <circle cx="100" cy="100" r="95" />
+  </svg>
+  <svg
+    class="cor"
+    [ngStyle]="{
+      'stroke-dashoffset': calculaPorcentagemGrafico(
+        dadosGrafico.percentualGeral
+      )
+    }">
+    <circle cx="100" cy="100" r="95" />
+  </svg>
+  <div class="info-donuts">
+    <div class="percent-donuts">
+      {{ dadosGrafico.percentualGeral | dotToComma: 1 }}%
+    </div>
+    <div class="calc-donuts">
+      {{ dadosGrafico.concluidasGeral }}/{{ dadosGrafico.parciaisGeral }}
+    </div>
+    <div class="title-donuts">{{ tituloDonuts }}</div>
+  </div>
+</div>

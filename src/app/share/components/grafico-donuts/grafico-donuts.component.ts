@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { managerCheckGeral } from 'src/app/manager-check-in-out/models/manager-check-in-out.model';
 
 @Component({
@@ -6,7 +6,7 @@ import { managerCheckGeral } from 'src/app/manager-check-in-out/models/manager-c
   templateUrl: './grafico-donuts.component.html',
   styleUrls: ['./grafico-donuts.component.scss'],
 })
-export class GraficoDonutsComponent implements OnInit {
+export class GraficoDonutsComponent implements OnInit, OnChanges {
   @Input() dadosGrafico: managerCheckGeral = {
     concluidasGeral: 0,
     parciaisGeral: 0,
@@ -15,7 +15,14 @@ export class GraficoDonutsComponent implements OnInit {
   };
   @Input() tituloDonuts = '';
 
-  ngOnInit(): void {
-    console.log(this.dadosGrafico);
+  ngOnInit(): void {}
+
+  ngOnChanges() {
+    console.log('donuts component', this.dadosGrafico);
+  }
+  calculaPorcentagemGrafico(value: number) {
+    let porcentagemGrafico = 0;
+    porcentagemGrafico = 600 - (value * 600) / 100;
+    return porcentagemGrafico;
   }
 }
