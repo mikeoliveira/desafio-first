@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+body {
+  margin: 0;
+}
+
 @import 'assets/style/settings/_colors';
 @import 'assets/style/components/title';
 @import 'assets/style/components/_box';

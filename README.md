@@ -8,7 +8,7 @@ Rode `npm start` para rodar o server de desenvolvimento (dev). NAvegue para `htt
 
 Rode `npm run server` para rodar o json-server. Esta aplicação irá fornecer uma API mockada com os valores a serem consumidos pela aplicação
 
-## Bom saber que:
+## Pontos Fortes do Projeto em Geral:
 
 Esta aplicação se encontra com `ESLint`, `CommitLint`, `prettier`, `lint-staged` e `Husky`.
 Antes de commitar se atente a escrita do seu código e da mensagem do seu commit para que não seja barrada em uma dessas validações.
@@ -32,6 +32,7 @@ Qualquer dúvida seguem links abaixo:
 
 - Revisar o funcionamento do Tooltip quando a tela esta em modo;
 - resposivo ou a janela é diminuida;
+- Responsivo
 
 ## Desafio - Parte 2 - Pontos Fortes
 
@@ -51,3 +52,4 @@ Gráfico:
 - Criar combo de periodo
 - Inserir os Tooltips com informações
 - Adicionar a Atualização no final do combobox
+- Responsivo
