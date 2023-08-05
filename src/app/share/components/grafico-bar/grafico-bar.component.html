@@ -1,7 +1,6 @@
 <div class="grafico-bar">
   <div *ngFor="let item of dadosGrafico.resultado">
     <p>{{ item.nmAgLabel }}</p>
-    <!-- <p>{{ item.percentual | dotToComma: 2 }}%</p> -->
     <div class="chart">
       <div class="bar-container">
         <div
@@ -10,7 +9,9 @@
         <div
           class="bar bar-item2"
           [ngStyle]="{ width: item.percentualParcial + '%' }"></div>
-        <!-- <div class="bar bar-item3"></div> -->
+        <div
+          class="bar bar-item3"
+          [ngStyle]="{ width: calculaPorcentagemGrafico(item) + '%' }"></div>
       </div>
     </div>
   </div>

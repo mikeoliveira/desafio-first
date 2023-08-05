@@ -1,7 +1,14 @@
 .grafico-donuts-bar {
-  display: flex;
-  justify-content: space-around;
+  &__title {
+    font-weight: 500;
+    margin-top: 0px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
 }
+
 .grafico-bar_wrapper {
   display: flex;
   flex-direction: column;

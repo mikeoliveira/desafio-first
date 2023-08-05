@@ -40,17 +40,29 @@ export class ManagerCheckService {
       element.nmAgLabel = 'Ag ' + String(Number(element.cdUn)).padStart(2, '0');
       responseGeral.concluidasGeral += element.concluidas;
       if (typeResquest === 'aberturaFechamento') {
-        element.percentualConcluidas =
-          (element.concluidas * 100) / element.parciais;
-        element.percentualParcial = 100 - element.percentualConcluidas;
+        if (element.concluidas > 0) {
+          element.percentualConcluidas =
+            (element.concluidas * 100) / element.parciais;
+        } else {
+          element.percentualConcluidas = 0;
+        }
+        if (element.parciais > 0) {
+          element.percentualParcial = 100 - element.percentualConcluidas;
+        } else {
+          element.percentualParcial = 0;
+        }
         responseGeral.parciaisGeral += element.parciais;
+        element.periodoConcluidas =
+          (element.percentualConcluidas * element.periodo) / 100;
+        element.periodoParcial =
+          (element.percentualParcial * element.periodo) / 100;
       } else if (typeResquest === 'atividadesMensais') {
         responseGeral.parciaisGeral += element.atividades;
+        element.percentualConcluidas =
+          (element.concluidas * 100) / element.atividades;
+        element.percentualParcial = 100 - element.percentualConcluidas;
       }
-      element.periodoConcluidas =
-        (element.percentualConcluidas * element.periodo) / 100;
-      element.periodoParcial =
-        (element.percentualParcial * element.periodo) / 100;
+
       if (responseGeral.resultado.length - 1 == index) {
         responseGeral.percentualGeral =
           (responseGeral.concluidasGeral * 100) / responseGeral.parciaisGeral;

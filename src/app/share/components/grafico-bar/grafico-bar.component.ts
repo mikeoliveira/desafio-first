@@ -1,5 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { managerCheckGeral } from 'src/app/manager-check-in-out/models/manager-check-in-out.model';
+import {
+  managerCheck,
+  managerCheckGeral,
+} from 'src/app/manager-check-in-out/models/manager-check-in-out.model';
 
 @Component({
   selector: 'app-grafico-bar',
@@ -14,9 +17,11 @@ export class GraficoBarComponent {
     resultado: [],
   };
 
-  calculaPorcentagemGrafico(value: any) {
-    let porcentagemGrafico = 0;
-    porcentagemGrafico = 600 - (value * 600) / 100;
-    return porcentagemGrafico;
+  calculaPorcentagemGrafico(value: managerCheck) {
+    console.log(value.percentualConcluidas + value.percentualParcial);
+    if (100 - (value.percentualConcluidas + value.percentualParcial) > 0) {
+      return 100 - (value.percentualConcluidas + value.percentualParcial);
+    }
+    return '0';
   }
 }
