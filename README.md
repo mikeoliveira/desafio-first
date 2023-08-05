@@ -21,16 +21,33 @@ Qualquer dúvida seguem links abaixo:
 
 ## Desafio - Parte 1 - Pontos fortes
 
-Utilizado Lazyload na Rota
-SCSS - Pattern BEM - Bloco Elemento e Modificador
-PIPE
+- Utilizado Lazyload na Rota
+- Criação de PIPE (DotToComma);
+  Estilo
+- SCSS - Pattern BEM - Bloco Elemento e Modificador
+- Paginas de estilos com Estrutura de importação
+- Definição de cores e layout de componentes default do projeto
 
 ## Debitos Técnicos - Parte 1
 
-Revisar o funcionamento do Tooltip quando a tela esta em modo resposivo ou a janela é diminuida
+- Revisar o funcionamento do Tooltip quando a tela esta em modo;
+- resposivo ou a janela é diminuida;
 
-Revisar Pipe de dotToComma - funcionamento para números na casa de milhar
+## Desafio - Parte 2 - Pontos Fortes
+
+- Utilizado Rota por componente;
+- Graficos construidos sem framework (somente HTML e CSS);
+- Componentes Dinâmicos - pasta: 'share' - (reutilizáveis);
+- Utilização ForkJoin para otimizar perfomance das chamadas;
 
 ## Debitos Técnicos - Parte 2
 
-Utilizado Rota por componente
+Gráfico:
+
+- Inserir legenda na parte de baixo
+- Bordas das barras deve conter "radius" somente nas pontas intermediárias sendo dinâmica a inserção das classes
+- Inseir Eixo x e Y
+
+- Criar combo de periodo
+- Inserir os Tooltips com informações
+- Adicionar a Atualização no final do combobox
