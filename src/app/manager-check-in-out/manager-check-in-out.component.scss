@@ -11,3 +11,12 @@
     display: initial;
   }
 }
+.loading {
+  .icon-santander-loading {
+    background-image: url('../../assets/santander-loading.gif');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+  }
+}

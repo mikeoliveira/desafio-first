@@ -12,6 +12,7 @@ export class IndiceComponent implements OnInit {
   indicesHighlight: IndiceWrapper[] = [];
   indicesDefault: IndiceWrapper[] = [];
   indiceLastUpdated: IndiceLastUpdated = { label: '', value: '' };
+  errorMsg: string | null = '';
 
   constructor(private indiceService: IndiceService) {}
 
@@ -21,17 +22,16 @@ export class IndiceComponent implements OnInit {
   }
 
   getIndices() {
+    this.errorMsg = '';
     this.indiceService.getIndices().subscribe(
       response => {
         this.indices = response;
         this.filterHighlightAndDefault(response);
       },
       error => {
-        console.error(
-          'ERRO AO EXECUTAR O SERVIÇO: Verifique se o json-server foi iniciado [npm run server]',
-          error,
-          error.status
-        );
+        this.errorMsg =
+          'ERRO AO EXECUTAR O SERVIÇO: Verifique se o json-server foi iniciado [npm run server]';
+        console.error(this.errorMsg, error, error.status);
       }
     );
   }

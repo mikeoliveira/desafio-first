@@ -9,3 +9,11 @@ body {
 @import 'assets/style/components/_box';
 @import 'assets/style/components/_tooltip';
 @import 'assets/style/components/_icon';
+
+.error {
+  padding: 15px;
+  color: $color-red;
+  border: solid 1px $color-red;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}

@@ -1,3 +1,6 @@
+<div class="error" *ngIf="errorMsg">
+  {{ errorMsg }}
+</div>
 <div class="box-wrapper">
   <div class="box-content">
     <div class="box-header">
@@ -9,7 +12,7 @@
         <!-- <div class="filter-calendar">Período</div> -->
       </div>
     </div>
-    <div class="box-body__container">
+    <div class="box-body__container" *ngIf="!carregando">
       <div class="box-body__item">
         <app-graficos-donuts-bar
           [dadosGrafico]="aberturaFechamentoLojas"
@@ -22,6 +25,10 @@
           [tituloGrafico]="'Atividades Mensais'"
           [tituloDonuts]="'Agências Concluídas'"></app-graficos-donuts-bar>
       </div>
+    </div>
+    <div class="loading" *ngIf="carregando">
+      Carregando ...
+      <span class="icon-santander-loading"></span>
     </div>
   </div>
   <div class="box-footer"></div>

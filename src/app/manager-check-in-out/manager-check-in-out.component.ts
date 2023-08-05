@@ -10,6 +10,8 @@ import { managerCheckGeral } from './models/manager-check-in-out.model';
 })
 export class ManagerCheckInOutComponent implements OnInit {
   carregando = true;
+  errorMsg: string | null = '';
+
   aberturaFechamentoLojas: managerCheckGeral = {
     concluidasGeral: 0,
     parciaisGeral: 0,
@@ -29,11 +31,19 @@ export class ManagerCheckInOutComponent implements OnInit {
       aberturaFechamentoLojas:
         this.managerCheckService.getAberturaFechamentoLojas(),
       atividadesMensais: this.managerCheckService.getAtividadesMensais(),
-    }).subscribe(response => {
-      console.log('component', response);
-      this.aberturaFechamentoLojas = response.aberturaFechamentoLojas;
-      this.atividadesMensais = response.atividadesMensais;
-      this.carregando = false;
-    });
+    }).subscribe(
+      response => {
+        console.log('component', response);
+        this.aberturaFechamentoLojas = response.aberturaFechamentoLojas;
+        this.atividadesMensais = response.atividadesMensais;
+        this.carregando = false;
+      },
+      error => {
+        this.carregando = false;
+        this.errorMsg =
+          'ERRO AO EXECUTAR O SERVIÇO: Verifique se o json-server foi iniciado [npm run server]';
+        console.error(this.errorMsg, error, error.status);
+      }
+    );
   }
 }
